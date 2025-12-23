@@ -105,14 +105,27 @@ ul.participants li {
   color: #444;
 }
 
+/* hide pseudo-bullet for participants */
 ul.participants li::before {
-  content: "";
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: #1a237e;
-  display: inline-block;
-  margin-right: 8px;
+  display: none;
+}
+
+.participant-email {
+  flex: 1;
+  word-break: break-all;
+}
+
+.delete-btn {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 4px;
+  border-radius: 4px;
+}
+.delete-btn:hover {
+  background: rgba(198, 40, 40, 0.08);
 }
 
 ul.participants li.empty {
